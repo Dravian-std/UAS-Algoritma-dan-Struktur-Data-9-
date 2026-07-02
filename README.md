@@ -13,8 +13,8 @@
 
 | No | Nama | NIM |
 |----|------|-----|
-| 1  | Dafa Keriting | [NIM] |
-| 2  | Danang Rafli  | [NIM] |
+| 1  | Dafa Syahrul Syah | [NIM] |
+| 2  | Danang Rafli  | K3525054  |
 | 3  | Faris ss      | [NIM] |
 
 ---
