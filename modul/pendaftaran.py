@@ -57,25 +57,3 @@ class SistemPendaftaranKlinik:
         return self.rekam_medis.get_height()
     def jumlah_pasien_tersimpan(self):
         return self.rekam_medis.count_nodes()
-    
-# if __name__ == "__main__":
-#     klinik = SistemPendaftaranKlinik()
-#     klinik.daftar_pasien_baru(1050, "Andi", 30, "Flu")
-#     klinik.daftar_pasien_baru(1020, "Budi", 25, "Demam")
-#     klinik.daftar_pasien_baru(1080, "Citra", 40, "Batuk")
-#     print()
-#     klinik.proses_pasien_berikutnya()   # memproses Andi (RM 1050)
-#     klinik.proses_pasien_berikutnya()   # memproses Budi (RM 1020)
-#     print()
-#     klinik.daftar_pasien_baru(1010, "Dewi", 22, "Migrain")
-#     klinik.proses_semua_antrean()
-#     print("\n=== Rekap Rekam Medis (in-order, terurut No. RM) ===")
-#     for no_rm, data in klinik.tampilkan_semua_rekam_medis():
-#         print(f"  RM {no_rm}: {data}")
-#     print("\nTinggi BST         :", klinik.tinggi_tree())
-#     print("Jumlah pasien BST  :", klinik.jumlah_pasien_tersimpan())
-#     print("\nCari RM 1020       :", klinik.cari_rekam_medis(1020))
-#     klinik.hapus_rekam_medis(1020)
-#     print("\nSetelah hapus RM 1020:")
-#     for no_rm, data in klinik.tampilkan_semua_rekam_medis():
-#         print(f"  RM {no_rm}: {data}")
