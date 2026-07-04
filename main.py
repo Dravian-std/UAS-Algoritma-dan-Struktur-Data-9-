@@ -1,18 +1,3 @@
-"""
-SIKLINIK - Sistem Antrean & Rekam Medis Klinik
-=================================================
-Program Utama (Entry Point)
-
-Integrasi struktur data:
-    Queue        -> Antrean kedatangan pasien
-    BST          -> Penyimpanan & pencarian data pasien (kunci: No. RM)
-    Binary Heap  -> Penentuan prioritas penanganan pasien
-    Stack        -> Riwayat tindakan / undo
-
-Jalankan file ini langsung, atau salin seluruh isi project ke dalam
-satu file Google Colab (.ipynb) sesuai ketentuan pengumpulan.
-"""
-
 from struktur_data.queue_antrian import Queue
 from struktur_data.stack_riwayat import Stack
 from struktur_data.bst_pasien import BST
