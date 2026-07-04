@@ -4,7 +4,7 @@ class NodePasien:
         self.data = data        # payload: dict data pasien
         self.left = None
         self.right = None
-class BST:  
+class BSTRekamMedis:  
     def __init__(self):
         self.root = None  # tree kosong di awal
     def insert(self, no_rm, data):

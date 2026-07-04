@@ -1,6 +1,6 @@
 from struktur_data.queue_antrian import Queue
 from struktur_data.stack_riwayat import Stack
-from struktur_data.bst_pasien import BST
+from struktur_data.bst_pasien import BSTRekamMedis
 from struktur_data.heap_prioritas import BinaryHeap
 
 from modul.pendaftaran import (
@@ -15,7 +15,7 @@ from modul.riwayat import tampilkan_riwayat, batalkan_tindakan_terakhir
 
 # ---------------------- INISIALISASI STRUKTUR DATA ----------------------
 queue_pendaftaran = Queue()
-bst_pasien = BST()
+bst_pasien = BSTRekamMedis()
 heap_prioritas = BinaryHeap()
 stack_riwayat = Stack()
 

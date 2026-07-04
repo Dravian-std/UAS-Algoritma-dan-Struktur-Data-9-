@@ -5,7 +5,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
-from struktur_data.bst_pasien import BST
+from struktur_data.bst_pasien import BSTRekamMedis
 
 class QueueAntrean:
     def __init__(self):
@@ -24,7 +24,7 @@ class QueueAntrean:
 class SistemPendaftaranKlinik:
     def __init__(self):
         self.antrean = QueueAntrean()      # antrean pasien yang baru datang
-        self.rekam_medis = BST()  # arsip permanen (BST)
+        self.rekam_medis = BSTRekamMedis()  # arsip permanen (BST)
     def daftarkan_ke_antrean(self, no_rm, nama, umur, keluhan):
         data_pasien = {
             "no_rm": no_rm,
