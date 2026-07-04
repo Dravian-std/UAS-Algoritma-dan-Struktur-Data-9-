@@ -1,9 +1,14 @@
-# from struktur_data.queue_antrian import Queue
-# from struktur_data.stack_riwayat import Stack
+from struktur_data.queue_antrian import Queue
+from struktur_data.stack_riwayat import Stack
 from struktur_data.bst_pasien import BST
 from struktur_data.heap_prioritas import BinaryHeap
 
-from modul.pendaftaran import SistemPendaftaranKlinik
+from modul.pendaftaran import (
+    daftarkan_ke_antrean,
+    proses_pendaftaran,
+    cari_pasien,
+    hapus_pasien,
+)
 from modul.triase import triase_pasien, tangani_pasien_prioritas
 from modul.riwayat import tampilkan_riwayat, batalkan_tindakan_terakhir
 
