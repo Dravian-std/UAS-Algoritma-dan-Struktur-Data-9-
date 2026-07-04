@@ -15,7 +15,7 @@
 |----|------|-----|
 | 1  | Dafa Syahrul Syah | [NIM] |
 | 2  | Danang Rafli  | K3525054  |
-| 3  | Faris ss      | [NIM] |
+| 3  | Faris Rafiuddin Hannan  | K3525058 |
 
 ---
 
