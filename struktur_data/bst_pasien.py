@@ -78,4 +78,3 @@ class BST:
     def _count_rec(self, node):
         if node is None:
             return 0
-        return 1 + self._count_rec(node.left) + self._count_rec(node.right)
