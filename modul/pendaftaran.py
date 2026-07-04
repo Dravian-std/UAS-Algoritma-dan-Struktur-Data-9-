@@ -5,7 +5,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
-from struktur_data import BSTRekamMedis
+from struktur_data.bst_pasien import BST
 
 class QueueAntrean:
     def __init__(self):
@@ -24,8 +24,8 @@ class QueueAntrean:
 class SistemPendaftaranKlinik:
     def __init__(self):
         self.antrean = QueueAntrean()      # antrean pasien yang baru datang
-        self.rekam_medis = BSTRekamMedis()  # arsip permanen (BST)
-    def daftar_pasien_baru(self, no_rm, nama, umur, keluhan):
+        self.rekam_medis = BST()  # arsip permanen (BST)
+    def daftarkan_ke_antrean(self, no_rm, nama, umur, keluhan):
         data_pasien = {
             "no_rm": no_rm,
             "nama": nama,
@@ -35,7 +35,7 @@ class SistemPendaftaranKlinik:
         self.antrean.enqueue(data_pasien)
         print(f"[ANTREAN] Pasien '{nama}' (RM {no_rm}) masuk antrean. "
               f"Total mengantre: {self.antrean.size()}")
-    def proses_pasien_berikutnya(self):
+    def proses_pendaftaran(self):
         data_pasien = self.antrean.dequeue()
         if data_pasien is None:
             print("[INFO] Tidak ada pasien dalam antrean untuk diproses.")
@@ -46,10 +46,10 @@ class SistemPendaftaranKlinik:
         return data_pasien
     def proses_semua_antrean(self):
         while not self.antrean.is_empty():
-            self.proses_pasien_berikutnya()
-    def cari_rekam_medis(self, no_rm):
+            self.proses_pendaftaran()
+    def cari_pasien(self, no_rm):
         return self.rekam_medis.search(no_rm)
-    def hapus_rekam_medis(self, no_rm):
+    def hapus_pasien(self, no_rm):
         self.rekam_medis.delete(no_rm)
     def tampilkan_semua_rekam_medis(self):
         return self.rekam_medis.inorder_traversal()
