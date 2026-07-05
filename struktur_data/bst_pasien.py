@@ -78,3 +78,11 @@ class BSTRekamMedis:
     def _count_rec(self, node):
         if node is None:
             return 0
+    def display(self):
+        data = self.inorder_traversal()
+        if not data:
+            print("Belum ada data pasien tersimpan.")
+            return
+        print("=== Data Pasien (terurut No. RM) ===")
+        for no_rm, pasien in data:
+            print(f"RM {no_rm}: {pasien}")
