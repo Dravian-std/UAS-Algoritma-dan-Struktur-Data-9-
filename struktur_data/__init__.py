@@ -1,3 +1,3 @@
-from struktur_data.bst_pasien import BST, NodePasien
+from struktur_data.bst_pasien import BSTRekamMedis, NodePasien
 
-__all__ = ["BST", "NodePasien"]
+__all__ = ["BSTRekamMedis", "NodePasien"]
