@@ -78,21 +78,3 @@ class BSTRekamMedis:
     def _count_rec(self, node):
         if node is None:
             return 0
-        return 1 + self._count_rec(node.left) + self._count_rec(node.right)
-    
-# if __name__ == "__main__":
-#     bst = BSTRekamMedis()
-#     bst.insert(1050, {"nama": "Andi", "umur": 30, "diagnosa": "Flu"})
-#     bst.insert(1020, {"nama": "Budi", "umur": 25, "diagnosa": "Demam"})
-#     bst.insert(1080, {"nama": "Citra", "umur": 40, "diagnosa": "Batuk"})
-#     bst.insert(1010, {"nama": "Dewi", "umur": 22, "diagnosa": "Migrain"})
-#     print("In-order (terurut No. RM):")
-#     for no_rm, data in bst.inorder_traversal():
-#         print(f"  RM {no_rm}: {data}")
-#     print("Tinggi tree :", bst.get_height())
-#     print("Jumlah node :", bst.count_nodes())
-#     print("Cari RM 1020:", bst.search(1020))
-#     bst.delete(1020)
-#     print("Setelah hapus RM 1020:")
-#     for no_rm, data in bst.inorder_traversal():
-#         print(f"  RM {no_rm}: {data}")
